@@ -11,6 +11,7 @@ while active:
     print('[4] 10 hashtags más usados')
     print('[5] Salir')
     pick = input('¿Qué función desea realizar? ')
+    print()
 
     if pick == '1':
         result = most_retweets(users, tweets, 10)
@@ -32,3 +33,4 @@ while active:
 
     else:
         print('Comando no válido')
+        print()
