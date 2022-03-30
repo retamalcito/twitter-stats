@@ -1,7 +1,10 @@
 from prepare_db import create_dfs
 from most_retweets import most_retweets
+from most_active_users import most_active_users
 
+print('Cargando datos...')
 users, tweets = create_dfs()
+print()
 
 active = True
 while active:
@@ -19,7 +22,9 @@ while active:
         print()
 
     elif pick == '2':
-        pass
+        result = most_active_users(users, tweets, 10)
+        print(result.head(10))
+        print()
 
     elif pick == '3':
         pass
